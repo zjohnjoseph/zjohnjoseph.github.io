@@ -273,7 +273,7 @@ section {
   margin-top: 2rem;
 }
 
-.about-details-container {
+.about-details-container  {
   justify-content: center;
   flex-direction: column;
 }
@@ -396,4 +396,122 @@ section {
   
   article .icon {
     cursor: default;
+  }
+
+/* PROJECTS SECTION 
+
+#projects {
+    position: relative;
+  }
+  
+  .color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+  }
+  
+  .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .project-title {
+    margin: 1rem;
+    color: black;
+  } */
+
+#project {
+    padding: 50px 0;
+  }
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+  }
+
+  .layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #e3d8d8);
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+  }
+
+  .layer p {
+    color: black;
+    font-size: medium;
+  }
+  .layer h3{
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .layer a{
+    margin-top: 20px;
+    color: #e3d8d8;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #443d3d;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .work:hover img{
+    transform: scale(1.1);
+  }
+  .work:hover .layer{
+    height: 100%;
+  }
+
+  .btn-see-more {
+    margin: 50px auto;
+    display: block;
+    width: fit-content;
+    border: 1px solid #443d3d;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000000;
+    transition: background 0.5s;
+  }
+
+  .btn-see-more:hover {
+    background: #443d3d;
+    text-decoration: none;
+
+  }
+  .wl-row-two {
+    /* Styles for the additional projects */
+    display: none; /* Initially hide */
+  }
+  
+  .wl-row-two.show {
+    display: grid; /* Show when the 'show' class is applied */
   }
