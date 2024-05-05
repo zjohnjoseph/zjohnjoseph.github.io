@@ -48,11 +48,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact {
-    height: 70vh; /* Change to auto height */
-    max-height: 40vh; /* Add max-height to limit height */
-    overflow-y: auto; /* Add overflow-y to enable scrolling if content exceeds max-height */
-}
+  #contact,
   footer {
     height: 40vh;
   }
@@ -68,6 +64,7 @@
     margin-bottom: 2rem;
   }
   .about-containers,
+  .education-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
