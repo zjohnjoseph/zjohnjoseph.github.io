@@ -4,7 +4,6 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
-
 document.addEventListener("DOMContentLoaded", function() {
     const seeMoreButton = document.querySelector('.btn-see-more');
     const additionalProjects = document.querySelector('.wl-row-two');
@@ -14,8 +13,4 @@ document.addEventListener("DOMContentLoaded", function() {
       additionalProjects.classList.toggle('show');
       seeMoreButton.textContent = additionalProjects.classList.contains('show') ? 'See Less' : 'See More';
     });
-  });
-
-
-  
-  
+  }); 
