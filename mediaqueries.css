@@ -1,14 +1,9 @@
 @media screen and (max-width: 1600px) {
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
   .about-containers {
     flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
   }
 }
 
@@ -30,12 +25,10 @@
   .arrow {
     display: none;
   }
-  section,
-  .section-container {
-    height: fit-content;
-  }
   section {
     margin: 0 5%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .section__pic-container {
     width: 275px;
@@ -45,23 +38,23 @@
   .about-containers {
     margin-top: 0;
   }
+  .experience-date {
+    float: none;
+    display: block;
+    margin-top: 0.25rem;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .contact-info-upper-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
   #profile {
-    height: 83vh;
     margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
   }
   .about-containers,
   .education-containers,
@@ -75,9 +68,6 @@
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
   }
   .logo {
     font-size: 1.5rem;
@@ -100,5 +90,16 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .publication-card {
+    padding: 1.25rem;
+  }
+  .experience-date {
+    float: none;
+    display: block;
+    margin-top: 0.25rem;
   }
 }

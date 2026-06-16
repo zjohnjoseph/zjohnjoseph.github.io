@@ -17,7 +17,9 @@
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -34,7 +36,9 @@
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#education" onclick="toggleMenu()">Education</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </div>
         </div>
@@ -46,7 +50,7 @@
         <div class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
           <h1 class="title">John Joseph</h1>
-          <p class="section__text__p2">Data Analyst</p>
+          <p class="section__text__p2">ML Engineer</p>
           <div class="btn-container">
             <button
               class="btn btn-color-2"
@@ -88,9 +92,10 @@
           <div class="about-details-container">
             <div class="text-container">
               <p>
-                I'm John Joseph, an experienced data analyst specializing in Splunk and Power BI. 
-                With a deep passion for machine learning, I'm currently pursuing a Master of Computer Science with a focus on Applied Artificial Intelligence at the University of Ottawa, aiming to transition into a role as a Machine Learning Engineer. 
-                Alongside my professional journey, I have a passion for teaching. Let's connect for discussions on data analysis, AI trends, and opportunities in machine learning and teaching!
+                I'm John Joseph, an ML Engineer and Researcher who recently completed a Master's in Applied AI at the University of Ottawa. 
+                I have hands-on experience designing evaluation frameworks for LLM hallucination mitigation, building end-to-end genomic prediction pipelines, and benchmarking vision-language models. 
+                With 3+ years of software engineering experience building enterprise automation platforms, I'm seeking Applied ML and AI engineering roles to build scalable, production-grade intelligent systems. 
+                Let's connect for discussions on AI, machine learning research, and engineering opportunities!
               </p>
             </div>
           </div>
@@ -109,7 +114,7 @@
                   class="icon"
                 />
                 <h3>Master of Computer Science</h3>
-                <p>Applied Artificial Intelligence <br />University of Ottawa <br />Jan 2024 - Present <br />CGPA - 9.33</p>
+                <p>Applied Artificial Intelligence <br />University of Ottawa <br />Jan 2024 - Apr 2026</p>
               </div>
               <div class="details-container">
                 <img
@@ -118,7 +123,7 @@
                   class="icon"
                 />
                 <h3>Bachelor of Engineering</h3>
-                <p>Computer Science<br />Anna University <br />Aug 2017 - Aug 2021 <br />CGPA - 8.75</p>
+                <p>Computer Science and Engineering<br />Panimalar Engineering College, Anna University <br />Jun 2017 - Apr 2021</p>
               </div>
               <div class="details-container">
                 <img
@@ -137,26 +142,56 @@
       <section id="experience">
         <p class="section__text__p1">Explore</p>
         <h1 class="title">My Experience</h1>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="assets/accenture-pic.png"
-              alt="Profile picture"
-              class="about-pic"
-            />
+        <div class="experience-block">
+          <div class="section-container">
+            <div class="section__pic-container">
+              <img
+                src="assets/aafc-pic.png"
+                alt="Agriculture and Agri-Food Canada logo"
+                class="about-pic"
+              />
+            </div>
+            <div class="experience-details-container">
+              <div class="text-container">
+                <h3>Agriculture and Agri-Food Canada (Co-Op) <span class="experience-date">Jan 2025 - Dec 2025</span></h3>
+                <p class="experience-role">Machine Learning Research Associate &mdash; Bioinformatics</p>
+                <ul>
+                  <li>Built an end-to-end, config-driven genomic prediction pipeline as a modular Python package, replacing fragmented research workflows with a reproducible architecture and cutting manual setup time by ~50%.</li>
+                  <li>Integrated traditional statistical, machine learning, deep learning, and graph-based models behind a unified interface, with automated data validation, experiment tracking, and Optuna-based hyperparameter tuning to improve reproducibility and accelerate model selection.</li>
+                  <li>Led development of analytical visualizations including gene-density maps and genetic-distance analyses that enabled clearer statistical interpretation and directly informed downstream breeding decisions.</li>
+                  <li>Co-authored 2 research papers, translating complex model outputs and statistical findings into clear written analysis for technical and scientific stakeholders.</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="experience-details-container">
-            <div class="text-container">           
-            <h3>Accenture Solutions Pvt. Ltd &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aug 2021 - Dec 2023</h3>
-            <p>Data Analyst</p>
-            <ul>
-              <li>Developed and deployed a Splunk application focused on cost optimization by monitoring Azure Services usage, improving resource allocation efficiency by 25%.</li>
-              <li>Automated manual processes using Python and shell scripting, reducing operational time by 30% and enhancing workflow.</li>
-              <li>Designed and deployed custom REST endpoints in Splunk to address specific business needs, extending platform capabilities and supporting data-driven decision-making.</li>
-              <li>Utilized Splunk and Power BI to build interactive dashboards and generate detailed reports, providing actionable insights for infrastructure monitoring, alert creation, and reporting.</li>
-              <li>Collaborated cross-functionally with system administrators and network engineers to troubleshoot issues and enhance Splunk performance, ensuring reliable system operations.</li>
-              <li>Performed regular administrative tasks, including user management, role assignment, and access control, to ensure data security and proper system utilization.</li>
-              </ul>
+        </div>
+        <div class="experience-block">
+          <div class="section-container">
+            <div class="section__pic-container">
+              <img
+                src="assets/accenture-pic.png"
+                alt="Accenture logo"
+                class="about-pic"
+              />
+            </div>
+            <div class="experience-details-container">
+              <div class="text-container">
+                <h3>Accenture Solutions Pvt. Ltd <span class="experience-date">Aug 2021 - Dec 2023</span></h3>
+                <p class="experience-role">Packaged App Development Analyst</p>
+                <ul>
+                  <li>Designed an Azure cost-intelligence data pipeline that ingested resource usage and billing data across subscriptions via the Cost Management API, Azure Monitor, and Resource Graph queries.</li>
+                  <li>Orchestrated data pipelines with Azure Data Factory and Synapse, transforming raw data into curated datasets that surfaced spending patterns, idle-resource waste, and optimization opportunities.</li>
+                  <li>Designed and built an internal Operational Readiness Testing platform adopted by 3 application teams, replacing spreadsheet-driven workflows with Python automation, REST integrations, and custom Splunk commands.</li>
+                  <li>Built interactive analytics dashboards in Splunk and Power BI to monitor cloud spend, VM utilization, database health, batch jobs, security posture, and API performance.</li>
+                  <li>Deployed serverless Azure Functions (Python) for scheduled health checks on URL availability and VM uptime, strengthening incident response and operational awareness.</li>
+                  <li>Engineered data parsing, event-handling, and advanced onboarding pipelines for CIM-compliant ingestion, event breaking, field extraction, and timestamp handling across UNIX, Linux, and Windows sources.</li>
+                  <li>Managed and optimized a high-availability distributed Splunk environment (indexers, search heads, deployment servers, and license management).</li>
+                  <li>Automated manual reporting and operational processes with Python and shell scripting, reducing operational time by 30%, while integrating Splunk alert actions with MS Teams webhooks.</li>
+                  <li>Assisted in developing a RESTful web application layer to broker Splunk search requests using JSON and XML, streamlining data access across integrated applications.</li>
+                  <li>Supported Azure Portal configurations and DevOps CI/CD pipelines for automated Splunk-related deployments, while managing private cloud infrastructure.</li>
+                  <li>Provided technical guidance, onboarding documentation, and solution support to project teams for complex logging use cases and system upgrades.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -164,177 +199,87 @@
       <section id="skills">
         <p class="section__text__p1">Have a Look at</p>
         <h1 class="title">My Skills</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Technical Skills</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Python</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Java</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Splunk</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Power BI</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>PyTorch</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Scikit-Learn</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>MLOps</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Excel</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>SQL</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Oracle</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Mongo DB</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Django</h3>
-                    <p>Elementary</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>React.js</h3>
-                    <p>Elementary</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>AWS</h3>
-                    <p>Elementary</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git & Github</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-              </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>ML &amp; AI</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">HuggingFace Transformers</span>
+              <span class="skill-tag">LoRA / PEFT</span>
+              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">Agentic RAG</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">Optuna</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">LangGraph</span>
+              <span class="skill-tag">Sentence-Transformers</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>LLM &amp; Agents</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Groq API</span>
+              <span class="skill-tag">Google Gemini API</span>
+              <span class="skill-tag">HuggingFace Inference API</span>
+              <span class="skill-tag">Tool Calling</span>
+              <span class="skill-tag">ReAct / Reflexion Agents</span>
+              <span class="skill-tag">Guardrails</span>
+              <span class="skill-tag">Multi-Agent Orchestration</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">Synthetic Data Generation</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Shell</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks &amp; Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Pydantic</span>
+              <span class="skill-tag">Jina AI</span>
+              <span class="skill-tag">Alembic</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Splunk</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Data &amp; Infrastructure</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">ChromaDB</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Cloud &amp; DevOps</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS (EC2, S3, RDS, CloudWatch)</span>
+              <span class="skill-tag">OpenTofu</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">GitHub Actions (CI/CD)</span>
+              <span class="skill-tag">HuggingFace Inference Endpoints</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Security &amp; Quality</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">JWT Auth</span>
+              <span class="skill-tag">bcrypt</span>
+              <span class="skill-tag">Sentry</span>
+              <span class="skill-tag">Opik</span>
+              <span class="skill-tag">Ruff</span>
+              <span class="skill-tag">MyPy</span>
             </div>
           </div>
         </div>
@@ -346,10 +291,26 @@
             <h1 class="title">Projects</h1>
             <div class="work-list">
               <div class="work">
+                <img src="assets/project-4.png">
+                <div class="layer">
+                  <h3>MedCliniQ: Benchmarking Hallucinations in Medical QA LLMs</h3>
+                  <p>Benchmarked 3 open-weight LLMs across 18 configurations on 3,000 medical questions. LoRA fine-tuning reached F1 &gt; 0.89. Shipped as a full-stack medical chatbot.</p>
+                  <a href="https://github.com/zjohnjoseph/MedCliniQ" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="assets/project-3.png">
+                <div class="layer">
+                  <h3>InterviewAI: Autonomous Technical Interview Platform</h3>
+                  <p>Multi-agent interview system on LangGraph with Groq &amp; Gemini APIs, hybrid RAG pipeline, JWT auth, and LLM guardrails. Deployed on AWS with Next.js dashboard.</p>
+                  <a href="https://github.com/zjohnjoseph/interview-ai" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="work">
                 <img src="assets/project-1.png">
                 <div class="layer">
-                  <h3>Can LLM’s Solve Brain Teasers?  </h3>
-                  <p>Explored the capabilities of Google's Gemma and Meta’s Llama 3 LLMs in solving brain teasers.</p>
+                  <h3>Can LLM's Solve Brain Teasers?</h3>
+                  <p>Explored the capabilities of Google's Gemma and Meta's Llama 3 LLMs in solving brain teasers.</p>
                   <a href="https://github.com/zjohnjoseph/Can-LLM-s-Solve-Brain-Teasers" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
               </div>
@@ -361,47 +322,35 @@
                   <a href="https://github.com/zjohnjoseph/Semi-Supervised-Learning-in-Banking-Marketing-Data" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
               </div>
-              <div class="work">
-                <img src="assets/project-3.png">
-                <div class="layer">
-                  <h3>The Interviewer</h3>
-                  <p>An end-to-end website for conducting and managing technical interviews</p>
-                  <a href="https://github.com/zjohnjoseph/The-Interviewer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-              </div>
             </div>
-            <!-- <div class="work-list wl-row-two">
-              <div class="work">
-                <img src="assets/project-1.png">
-                <div class="layer">
-                  <h3> Project 4</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora quis unde assumenda aliquam sint cumque, aperiam sunt, praesentium dicta qui, repudiandae optio veritatis maiores eum vero quasi. Ut, odit!</p>
-                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-              </div>
-              <div class="work">
-                <img src="assets/project-2.png">
-                <div class="layer">
-                  <h3> Project 5</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora quis unde assumenda aliquam sint cumque, aperiam sunt, praesentium dicta qui, repudiandae optio veritatis maiores eum vero quasi. Ut, odit!</p>
-                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-              </div>
-              <div class="work">
-                <img src="assets/project-3.png">
-                <div class="layer">
-                  <h3> Project 6</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora quis unde assumenda aliquam sint cumque, aperiam sunt, praesentium dicta qui, repudiandae optio veritatis maiores eum vero quasi. Ut, odit!</p>
-                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <a href="#" class="btn-see-more">See More</a>
+          </div>
+        </div>
+      </section>
+      <section id="publications">
+        <p class="section__text__p1">Read My Research</p>
+        <h1 class="title">Publications</h1>
+        <div class="publications-container">
+          <div class="publication-card">
+            <h3>MultiGS: A comprehensive and user-friendly genomic prediction platform integrating statistical, machine learning, and deep learning models for breeders</h3>
+            <p class="publication-authors">You, F. M., Zheng, C., <strong>Daniel, J. J. Z.</strong>, Li, P., Tar'an, B., &amp; Cloutier, S.</p>
+            <p class="publication-journal">Crop Breeding, Genetics and Genomics, 8(1), e260004 (2026)</p>
+            <a href="https://doi.org/10.20900/cbgg20260004" target="_blank" class="publication-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> View Publication
+            </a>
+          </div>
+          <div class="publication-card">
+            <h3>Genomic selection for seed yield enhances flax breeding efficiency</h3>
+            <p class="publication-authors">You, F. M., Zheng, C., <strong>Daniel, J. J. Z.</strong>, Li, P., Jackle, K., House, M., Tar'an, B., &amp; Cloutier, S.</p>
+            <p class="publication-journal">Molecular Breeding, 46(6), 61 (2026)</p>
+            <p class="publication-note">Across-population genomic selection (r = 0.67&ndash;0.84) that eliminated 61&ndash;91% of low-performing lines and reduced field evaluation costs by 48&ndash;78%.</p>
+            <a href="https://doi.org/10.1007/s11032-026-01684-3" target="_blank" class="publication-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> View Publication
+            </a>
           </div>
         </div>
       </section>
       <section id="contact">
-        <p class="section__text__p1"><br><br><br>Get in Touch</p>
+        <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
           <div class="contact-info-container">
@@ -423,18 +372,7 @@
         </div>
       </section>
       <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Copyright &#169; 2024 John Joseph. All Rights Reserved.</p>
+        <p>Copyright &#169; 2026 John Joseph. All Rights Reserved.</p>
       </footer>
 </body>
 </html>
